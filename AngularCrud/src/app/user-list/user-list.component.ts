@@ -1,3 +1,5 @@
+// user-list.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
@@ -12,10 +14,10 @@ export class UserListComponent implements OnInit {
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    this.fetchUsers();
+    this.getUsers();
   }
 
-  fetchUsers(): void {
+  getUsers(): void {
     this.userService.getUsers().subscribe((users) => {
       this.users = users;
     });
@@ -23,7 +25,8 @@ export class UserListComponent implements OnInit {
 
   deleteUser(id: number): void {
     this.userService.deleteUser(id).subscribe(() => {
-      this.fetchUsers();
+      alert("Usuário excluido")
+      window.location.reload();
     });
   }
 }

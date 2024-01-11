@@ -1,3 +1,4 @@
+// user-details.component.ts
 
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
@@ -25,8 +26,8 @@ export class UserDetailsComponent implements OnInit {
 
   getUserDetails(): void {
     this.route.params.subscribe((params: Params) => {
-      const userId = +params['id']; // convert to number
-      this.userService.getUserById(userId).subscribe((user) => {
+      const userId = params['id'];
+      this.userService.getUserById(+userId).subscribe((user) => {
         this.user = user;
       });
     });
@@ -34,6 +35,26 @@ export class UserDetailsComponent implements OnInit {
 
   editUser(): void {
     this.isEditing = true;
+  }
+
+  saveUser(): void {
+    this.isEditing = false;
+
+    // Certifique-se de fornecer o 'id' do usuário e os dados atualizados
+    const updatedUser = {
+      id: this.user.id,
+      // ... outros dados atualizados
+    };
+
+    this.userService.updateUser(updatedUser.id, updatedUser).subscribe(
+      () => {
+        // Lógica adicional após a atualização, se necessário
+      },
+      (error) => {
+        console.error('Erro ao salvar usuário:', error);
+        // Lide com o erro conforme necessário
+      }
+    );
   }
 
   goBack(): void {

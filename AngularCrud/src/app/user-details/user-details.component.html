@@ -11,8 +11,9 @@
   <p>Escolaridade: {{ user.escolaridade }}</p>
 
 
+<button *ngIf="isEditing" (click)="editUser()">Editar</button>
+<button *ngIf="!isEditing" (click)="goBack()">Voltar</button>
 
-  <button *ngIf="isEditing" (click)="editUser()">Editar</button>
 </div>
 
-<button *ngIf="!isEditing" (click)="goBack()">Voltar</button>
+
