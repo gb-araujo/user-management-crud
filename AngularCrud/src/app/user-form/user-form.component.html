@@ -1,0 +1,28 @@
+<!-- user-form.component.html -->
+
+<h2>Formulário de Usuário</h2>
+<form (ngSubmit)="saveUser()">
+  <label for="nome">Nome:</label>
+  <input id="nome" [(ngModel)]="user.nome" name="nome" required>
+
+  <label for="sobrenome">Sobrenome:</label>
+  <input id="sobrenome" [(ngModel)]="user.sobrenome" name="sobrenome" required>
+
+  <label for="email">E-mail:</label>
+  <input id="email" [(ngModel)]="user.email" name="email" required>
+
+  <label for="dataNascimento">Data de Nascimento:</label>
+  <input type="date" id="dataNascimento" [(ngModel)]="user.dataNascimento" name="dataNascimento" required>
+
+  <label for="escolaridade">Escolaridade:</label>
+  <select id="escolaridade" [(ngModel)]="user.escolaridade" name="escolaridade" required>
+    <option value="1">Ensino Fundamental</option>
+    <option value="2">Ensino Médio</option>
+    <option value="3">Graduação</option>
+ 
+  </select>
+
+
+
+  <button type="submit">Salvar</button>
+</form>

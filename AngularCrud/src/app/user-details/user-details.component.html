@@ -1,0 +1,18 @@
+<!-- user-details.component.html -->
+
+<div *ngIf="user">
+  <h2>Detalhes do Usuário</h2>
+
+  <p>ID: {{ user.id }}</p>
+  <p>Nome: {{ user.nome }}</p>
+  <p>Sobrenome: {{ user.sobrenome }}</p>
+  <p>Email: {{ user.email }}</p>
+  <p>Data de Nascimento: {{ user.dataNascimento | date:'short' }}</p>
+  <p>Escolaridade: {{ user.escolaridade }}</p>
+
+  <!-- Adicione mais campos conforme necessário -->
+
+  <button *ngIf="isEditing" (click)="editUser()">Editar</button>
+</div>
+
+<button *ngIf="!isEditing" (click)="goBack()">Voltar</button>
