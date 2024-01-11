@@ -29,7 +29,6 @@
         <td>{{ user.dataNascimento | date: 'dd/MM/yyyy' }}</td>
         <td>{{ user.escolaridade }}</td>
         <td>
-          <a [routerLink]="['/user', user.id]" class="action-link">Detalhes</a>
           <a [routerLink]="['/edit-user', user.id]" class="action-link">Editar</a>
           <button (click)="deleteUser(user.id)" class="action-button">Excluir</button>
         </td>
