@@ -1,5 +1,11 @@
 # GerenciarUsuarios
 
+Requisitos:
+- node.js
+- angular cli
+- .netcore SDK
+
+
 Instale as dependências do projeto:
 
 <code>npm install</code>
