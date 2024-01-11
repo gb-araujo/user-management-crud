@@ -1,4 +1,3 @@
-// user-list.component.ts
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
@@ -24,7 +23,6 @@ export class UserListComponent implements OnInit {
 
   deleteUser(id: number): void {
     this.userService.deleteUser(id).subscribe(() => {
-      // Update the list after deletion
       this.fetchUsers();
     });
   }

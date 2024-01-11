@@ -1,4 +1,3 @@
-// user-form.component.ts
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../user.service';
@@ -21,7 +20,6 @@ export class UserFormComponent implements OnInit {
     const userId = this.route.snapshot.paramMap.get('id');
 
     if (userId) {
-      // Load user details if ID is present (for edit page)
       this.userService.getUserById(+userId).subscribe((user) => {
         this.user = user;
       });
@@ -30,14 +28,12 @@ export class UserFormComponent implements OnInit {
 
   saveUser(): void {
     if (this.user.id) {
-      // If user has an ID, it's an update
       this.userService.updateUser(this.user).subscribe(() => {
-        this.router.navigate(['/']); // Redirect to user list after update
+        this.router.navigate(['/']); 
       });
     } else {
-      // If user has no ID, it's an add
       this.userService.addUser(this.user).subscribe(() => {
-        this.router.navigate(['/']); // Redirect to user list after add
+        this.router.navigate(['/']); 
       });
     }
   }

@@ -1,4 +1,4 @@
-// user-details.component.ts
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { UserService } from '../user.service';
@@ -34,7 +34,6 @@ export class UserDetailsComponent implements OnInit {
 
   editUser(): void {
     this.isEditing = true;
-    // Additional logic for editing, if necessary
   }
 
   goBack(): void {

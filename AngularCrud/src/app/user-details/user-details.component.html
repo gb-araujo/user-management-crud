@@ -1,4 +1,4 @@
-<!-- user-details.component.html -->
+
 
 <div *ngIf="user">
   <h2>Detalhes do Usuário</h2>
@@ -10,7 +10,7 @@
   <p>Data de Nascimento: {{ user.dataNascimento | date:'short' }}</p>
   <p>Escolaridade: {{ user.escolaridade }}</p>
 
-  <!-- Adicione mais campos conforme necessário -->
+
 
   <button *ngIf="isEditing" (click)="editUser()">Editar</button>
 </div>
