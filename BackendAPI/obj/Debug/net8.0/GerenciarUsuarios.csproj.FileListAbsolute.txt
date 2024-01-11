@@ -409,3 +409,4 @@ C:\Users\Gabriel\Desktop\Projetos\GerenciarUsuarios\BackendAPI\obj\Debug\net8.0\
 C:\Users\Gabriel\Desktop\Projetos\GerenciarUsuarios\BackendAPI\obj\Debug\net8.0\GerenciarUsuarios.pdb
 C:\Users\Gabriel\Desktop\Projetos\GerenciarUsuarios\BackendAPI\obj\Debug\net8.0\GerenciarUsuarios.genruntimeconfig.cache
 C:\Users\Gabriel\Desktop\Projetos\GerenciarUsuarios\BackendAPI\obj\Debug\net8.0\ref\GerenciarUsuarios.dll
+C:\Users\Gabriel\Desktop\Projetos\GerenciarUsuarios\BackendAPI\obj\Debug\net8.0\GerenciarUsuarios.sourcelink.json

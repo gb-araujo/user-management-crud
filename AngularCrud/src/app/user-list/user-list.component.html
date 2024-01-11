@@ -1,9 +1,15 @@
 <!-- user-list.component.html -->
 
 <h2>Lista de Usuários</h2>
+<p>Escolaridades: </p>
+<ul>
+  <li>1 - Fundamental</li>
+  <li>2 - Médio</li>
+  <li>3 - Superior</li>
+</ul>
 
 <div class="table-responsive">
-  <table class="table table-bordered">
+  <table class="table table-bordered table-striped">
     <thead>
       <tr>
         <th>ID</th>
@@ -16,7 +22,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let user of users">
+      <tr *ngFor="let user of users" class="user-row">
         <td>{{ user.id }}</td>
         <td>{{ user.nome }}</td>
         <td>{{ user.sobrenome }}</td>
@@ -24,9 +30,9 @@
         <td>{{ user.dataNascimento | date: 'dd/MM/yyyy' }}</td>
         <td>{{ user.escolaridade }}</td>
         <td>
-          <a [routerLink]="['/user', user.id]">Detalhes</a>
-          <a [routerLink]="['/edit-user', user.id]">Editar</a>
-          <button (click)="deleteUser(user.id)">Excluir</button>
+          <a [routerLink]="['/user', user.id]" class="action-link">Detalhes</a>
+          <a [routerLink]="['/edit-user', user.id]" class="action-link">Editar</a>
+          <button (click)="deleteUser(user.id)" class="action-button">Excluir</button>
         </td>
       </tr>
     </tbody>

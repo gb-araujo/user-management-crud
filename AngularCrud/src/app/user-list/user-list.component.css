@@ -1,0 +1,53 @@
+/* user-list.component.css */
+
+.table-responsive {
+    margin-top: 20px;
+  }
+  
+  .table-bordered {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .table-bordered th, .table-bordered td {
+    border: 1px solid #060606;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .table-striped tbody tr:nth-child(odd) {
+    background-color: #b7630f8e;
+  }
+  
+  .user-row:hover {
+    background-color: #ff9b36;
+  }
+  
+  .action-link, .action-button {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border: 1px solid #090909;
+    border-radius: 4px;
+    color: #fbfbfb;
+    cursor: pointer;
+    background-color: #ff9b36;
+  }
+  
+  .action-button {
+    background-color: #e10000;
+    color: #fff;
+  }
+  
+  .action-link:hover {
+    
+    color: #ff9b36;
+    background-color: white;
+  }
+
+  .action-button:hover{
+    color: black;
+  }
+  
