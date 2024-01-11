@@ -4,6 +4,7 @@ Requisitos:
 - node.js
 - angular cli
 - .netcore SDK
+- SQL Server (Mixed Mode)
 
 
 Instale as dependências do projeto:
