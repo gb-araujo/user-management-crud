@@ -1,24 +1,31 @@
-# GerenciarUsuarios
+# GerenciarUsuários
 
-Requisitos:
-- node.js
-- angular cli
-- .netcore SDK
-- SQL Server (Mixed Mode)
+## Requisitos
 
+- Node.js
+- Angular CLI
+- .NET Core SDK
+- SQL Server (SQLServer Auth)
 
-Instale as dependências do projeto:
+## Instalação de Dependências
 
-<code>npm install</code>
+Para instalar as dependências do projeto, execute o seguinte comando:
 
-Inicie o servidor de desenvolvimento:
+```bash
+npm install - frontend
+dotnet run - backend
+```
 
-<code>ng serve</code>
+Rodar o projeto: 
 
-Edite o arquivo e altere a connectionstring:
-<code>code app.db.context.cs</code>
-<code>string connectionString = "Server=NOME_DO_SERVIDOR;Database=confitec;User Id=NOME_DE_USUARIO;Password=SENHA_DO_USUARIO;TrustServerCertificate=True;Encrypt=False;";</code>
+```bash
+ng serve - start angular
+dotnet run - start .net
+```
 
-Inicie o .net core:
+Edite a string de conexão no arquivo app.db.context.cs para conectar com o banco de dados:
 
-<code> dotnet run </code>
+```bash
+string connectionString =
+                "Server=NOME-SERVIDOR\;Database=confitec;User Id=sa;Password=confitec;TrustServerCertificate=True;Encrypt=False;";
+```
