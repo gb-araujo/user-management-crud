@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriel\\Desktop\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj": {}
+    "C:\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriel\\Desktop\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj": {
+    "C:\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel\\Desktop\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj",
+        "projectUniqueName": "C:\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj",
         "projectName": "GerenciarUsuarios",
-        "projectPath": "C:\\Users\\Gabriel\\Desktop\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj",
-        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriel\\Desktop\\Projetos\\GerenciarUsuarios\\BackendAPI\\obj\\",
+        "projectPath": "C:\\Projetos\\GerenciarUsuarios\\BackendAPI\\GerenciarUsuarios.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\GerenciarUsuarios\\BackendAPI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
