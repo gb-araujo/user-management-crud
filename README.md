@@ -1,5 +1,3 @@
-# GerenciarUsuários
-
 ## Requisitos
 
 - Node.js
@@ -23,9 +21,4 @@ ng serve - start angular
 dotnet run - start .net
 ```
 
-Edite a string de conexão no arquivo app.db.context.cs para conectar com o banco de dados:
-
-```bash
-string connectionString =
-                "Server=NOME-SERVIDOR\;Database=confitec;User Id=sa;Password=confitec;TrustServerCertificate=True;Encrypt=False;";
-```
+Edite a string de conexão no arquivo app.db.context.cs para conectar com o banco de dados
